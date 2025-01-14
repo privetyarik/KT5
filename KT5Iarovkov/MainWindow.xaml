@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KT5Iarovkov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ИС по прокату спортивного инвентаря" Height="450" Width="800"
+        MinHeight="650" MinWidth="1000" Icon="Resources/logo.ico"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF76E383">
+            <Label Content="Прокат сопртивного инвентаря" 
+            FontSize="36" VerticalAlignment="Center"
+            HorizontalAlignment="Center" FontFamily="Comic Sans MS"></Label>
+            <Image Source="Resources/logo.png" HorizontalAlignment="Left"
+                   Margin="160,0,0,0"></Image>
+        </Grid>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+
     </Grid>
 </Window>
