@@ -20,6 +20,8 @@ namespace KT5Iarovkov.Data
         {
         }
 
+
+
         private static TradeEntities _context;
 
         public static TradeEntities GetContext()
@@ -30,7 +32,6 @@ namespace KT5Iarovkov.Data
             }
             return _context;
         }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -39,5 +40,7 @@ namespace KT5Iarovkov.Data
         public virtual DbSet<LoginStatus> LoginStatus { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Sex> Sex { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

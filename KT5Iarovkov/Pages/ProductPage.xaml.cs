@@ -24,5 +24,10 @@ namespace KT5Iarovkov.Pages
         {
             InitializeComponent();
         }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.LoginPage());
+        }
     }
 }

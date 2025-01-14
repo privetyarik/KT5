@@ -14,7 +14,16 @@ namespace KT5Iarovkov.Data
     
     public partial class LoginStatus
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public LoginStatus()
+        {
+            this.User = new HashSet<User>();
+        }
+    
         public int id { get; set; }
         public string LoginStatus1 { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> User { get; set; }
     }
 }

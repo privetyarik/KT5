@@ -17,3 +17,10 @@ C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\obj\Debug\Pages\ProductPage.g.cs
 C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\obj\Debug\Pages\LoginPage.baml
 C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\obj\Debug\Pages\ProductPage.baml
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\obj\Debug\KT5Iarovkov_Content.g.cs
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\bin\Debug\EntityFramework.dll
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\bin\Debug\EntityFramework.xml
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\comcuru\Desktop\KT5\KT5Iarovkov\obj\Debug\KT5Iarovkov.csproj.CopyComplete

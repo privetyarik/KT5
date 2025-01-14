@@ -30,6 +30,7 @@ namespace KT5Iarovkov.Pages
             try
             {
                 StringBuilder errors = new StringBuilder();
+                StringBuilder errors1 = new StringBuilder();
                 if (string.IsNullOrEmpty(LoginTextBox.Text))
                 {
                     errors.AppendLine("Заполните логин");
@@ -38,10 +39,27 @@ namespace KT5Iarovkov.Pages
                 {
                     errors.AppendLine("Заполните пароль");
                 }
-            }
-            catch
-            {
+                
+                if (errors.Length > 0)
+                {
+                    MessageBox.Show(errors.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
 
+
+
+
+                if (Data.TradeEntities.GetContext().User.Any(d => d.Login == LoginTextBox.Text && d.Password == PasswordBox.Password))
+                {
+                    Classes.Manager.MainFrame.Navigate(new Pages.ProductPage());
+
+                    MessageBox.Show("Успешно!", "Успешно!", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
